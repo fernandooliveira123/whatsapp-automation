@@ -1,5 +1,18 @@
-import pandas as pd
+# import pandas as pd
+from selenium import webdriver
 import time
+
+#definindo navegador
+navegador = webdriver.Chrome()
+navegador.get("https://web.whatsapp.com")
+
+
+time.sleep(30)
+navegador.quit()
+
+
+
+
 # from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 # from selenium.webdriver.common.by import By
